@@ -1,0 +1,215 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth!important;
+    font-family: helvetica;
+}
+/* menu: parte vermelha (cabeçalho) */
+.menu{
+    background-color: rgb(255, 69, 69);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu a{
+    padding-top:20px;
+    font-size:25pt;
+}
+/* logo do cabeçalho */
+#logo img{
+    width: 150px;
+}
+#logo{
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin: 20px;
+    padding: 0;
+}
+/* input: barra de pesquisa */
+#busca{
+    float: left;
+    margin: 100px;
+    padding: 0;
+}
+#busca input{
+    display:inline-block;
+    padding: 5px;
+    font-size:13pt;
+    color:#495057;
+    border:1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    width: 500px;
+}
+#busca button {
+    border-radius: 10px;
+    background-color: #f4511e;
+    border: 1px solid #b83811;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+}
+#busca button span {
+    position: relative;
+    font-weight: bold;
+    font-size:13pt;
+    color: #fff;
+}
+#busca button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 55px;
+    right: -5px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#busca button:hover span {
+    padding-right: 30px;
+    transition: 0.5s;
+}
+#busca button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* navegacao: links do cabeçalho*/
+.navegacao{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index:1020
+}
+.navegacao li{
+    float: left;
+}
+.navegacao li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navegacao li a:hover {
+    transition: 0.5s;
+    background-color: #f00;
+    text-decoration: none;
+}
+/* para resoluções menores que 780px */
+@media (max-width: 780px){
+    *{
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        scroll-behavior: smooth!important;
+        font-family: helvetica;
+    }
+    /* menu: parte vermelha (cabeçalho) */
+    .menu{
+        background-color: rgb(255, 69, 69);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu a{
+        padding-top:20px;
+        font-size:25pt;
+    }
+    /* logo do cabeçalho */
+    #logo img{
+        width: 150px;
+    }
+    #logo{
+        font-size: 20px;
+        color: #fff;
+        float: left;
+        margin: 20px;
+        padding: 0;
+    }
+    /* input: barra de pesquisa */
+    #busca{
+        float: left;
+        margin: 100px;
+        padding: 0;
+    }
+    #busca input{
+        display:inline-block;
+        padding: 5px;
+        font-size:13pt;
+        color:#495057;
+        border:1px solid rgb(255, 0, 0);
+        border-radius: 10px;
+        width: 500px;
+    }
+    #busca button {
+        border-radius: 10px;
+        background-color: #f4511e;
+        border: 1px solid #b83811;
+        padding: 5px;
+        width: 100px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    #busca button span {
+        position: relative;
+        font-weight: bold;
+        font-size:13pt;
+        color: #fff;
+    }
+    #busca button span:after {
+        content: '>>';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 55px;
+        right: -5px;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    #busca button:hover span {
+        padding-right: 30px;
+        transition: 0.5s;
+    }
+    #busca button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    /* navegacao: links do cabeçalho*/
+    .navegacao{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: blue;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index:1020
+    }
+    .navegacao li{
+        float: left;
+    }
+    .navegacao li a{
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .navegacao li a:hover {
+        transition: 0.5s;
+        background-color: #f00;
+        text-decoration: none;
+    }
+}
